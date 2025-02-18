@@ -1,0 +1,18 @@
+services:
+  dm8:
+    image: dm8:dm8_20250206_rev257733_x86_rh6_64
+    restart: always
+    privileged: true
+    ports:
+      - "5236:5236"
+    environment:
+      - LD_LIBRARY_PATH=/opt/dmdbms/bin
+      - PAGE_SIZE=16
+      - EXTENT_SIZE=32
+      - LOG_SIZE=1024
+      - UNICODE_FLAG=1
+      - CASE_SENSITIVE=0
+      - SYSDBA_PWD=ChinaGexu4398.
+      - INSTANCE_NAME=test
+#    volumes:
+#       - /opt/data:/opt/dmdbms/data
