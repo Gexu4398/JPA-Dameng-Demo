@@ -10,8 +10,11 @@ spring:
     open-in-view: true
 
 springdoc:
+  api-docs:
+    enabled: true
   swagger-ui:
     path: /swagger-ui.html
+    doc-expansion: none
 
 app:
   datasource:
